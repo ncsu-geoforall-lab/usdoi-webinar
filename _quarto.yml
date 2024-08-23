@@ -1,0 +1,10 @@
+project:
+  type: website
+  output-dir: docs
+execute:
+  freeze: auto
+format:
+  html:
+    theme: [pandoc, theme.scss]
+    toc: true
+    toc-title: Table of Contents
