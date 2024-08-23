@@ -46,6 +46,10 @@ To preview the website locally, run the following command:
 quarto preview
 ```
 
+## Publishing the Website
+
+The website is pubished to GitHub Pages when you commit to the `main` branch.
+
 ## Author
 
 Corey T. White
