@@ -4,14 +4,14 @@
     "href": "notebooks/grass_jupyter.html",
     "title": "Geoprocessing with GRASS GIS and Jupyter Notebooks",
     "section": "",
-    "text": "GRASS GIS is a Geospatial Processing Engine\nOpen Source (GPL v2)\nDeveloped by International and Multi-institutional groups and individuals (GRASS Development Team)\nMember of the Open Source Geospatial Foundatispace\nRecieved Open Source Security Foundation (OpenSSF) Best Practices Badge - 2024\n\n\n\n\nJupyter Notebooks\nGRASS GIS Python API\nActinia REST API\nEasy intergration with other Data Science tools in Python and R ecosystem\n\n\n\n\n\nActive community of users and developers\nMailing lists, chat, and forums\nConferences and workshops\nDocumentation and tutorials\nMentoring and outreach programs\n\n\n\n\n\nOpen Access\nCommunity Mantaince and Support\nReproducible Research\nCitations"
+    "text": "DOI"
   },
   {
     "objectID": "notebooks/grass_jupyter.html#grass-v8.5-preview",
     "href": "notebooks/grass_jupyter.html#grass-v8.5-preview",
     "title": "Geoprocessing with GRASS GIS and Jupyter Notebooks",
-    "section": "",
-    "text": "GRASS GIS is a Geospatial Processing Engine\nOpen Source (GPL v2)\nDeveloped by International and Multi-institutional groups and individuals (GRASS Development Team)\nMember of the Open Source Geospatial Foundatispace\nRecieved Open Source Security Foundation (OpenSSF) Best Practices Badge - 2024\n\n\n\n\nJupyter Notebooks\nGRASS GIS Python API\nActinia REST API\nEasy intergration with other Data Science tools in Python and R ecosystem\n\n\n\n\n\nActive community of users and developers\nMailing lists, chat, and forums\nConferences and workshops\nDocumentation and tutorials\nMentoring and outreach programs\n\n\n\n\n\nOpen Access\nCommunity Mantaince and Support\nReproducible Research\nCitations"
+    "section": "GRASS v8.5 (Preview)",
+    "text": "GRASS v8.5 (Preview)\n\nGRASS GIS is a Geospatial Processing Engine\nOpen Source (GPL v2)\nDeveloped by International and Multi-institutional groups and individuals (GRASS Development Team)\nMember of the Open Source Geospatial Foundatispace\nRecieved Open Source Security Foundation (OpenSSF) Best Practices Badge - 2024\n\n\nModern Tooling\n\nJupyter Notebooks\nGRASS GIS Python API\nActinia REST API\nEasy intergration with other Data Science tools in Python and R ecosystem\n\n\n\nCommunity\n\nActive community of users and developers\nMailing lists, chat, and forums\nConferences and workshops\nDocumentation and tutorials\nMentoring and outreach programs\n\n\n\nLeader in Open Science\n\nOpen Access\nCommunity Mantaince and Support\nReproducible Research\nCitations"
   },
   {
     "objectID": "notebooks/grass_jupyter.html#setup-environment",
