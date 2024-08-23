@@ -32,6 +32,7 @@ env\Scripts\activate.bat
 
 # Install dependencies
 py -m pip install -r requirements.txt
+```
 
 ## Notebooks
 
