@@ -4,7 +4,13 @@ $primary:  #088B36;
 $body-bg: #ffffff;
 $banner-bg: #088B36;
 
+$grass-color-light:  #EFF4E8;
+$grass-color-black: #0a0a0a;
+
 .quarto-title-banner {
-  background-color: $primary !important;
-  color: #ffffff;
+  background-color: $grass-color-light !important;
+  color: $grass-color-black !important;
+  h1 {
+    color: $grass-color-black !important;
+  }
 }

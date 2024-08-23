@@ -1,6 +1,22 @@
 project:
   type: website
   output-dir: docs
+website:
+  navbar:
+    title: "NCSU - GeoForAll Lab"
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+    tools:
+      - icon: github
+        menu: 
+          - text: "Source Code"
+            href: "https://github.com/ncsu-geoforall-lab/usdoi-webinar"
+          - text: "Report an Issue"
+            href: "https://github.com/ncsu-geoforall-lab/usdoi-webinar/issues"
+
 execute:
   freeze: auto
 format:
