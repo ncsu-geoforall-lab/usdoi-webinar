@@ -213,7 +213,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#area-of-interest" id="toc-area-of-interest" class="nav-link" data-scroll-target="#area-of-interest">Area of Interest</a>
   <ul>
   <li><a href="#chaco-cultural-national-historical-park" id="toc-chaco-cultural-national-historical-park" class="nav-link" data-scroll-target="#chaco-cultural-national-historical-park">Chaco Cultural National Historical Park</a></li>
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#data-summary" id="toc-data-summary" class="nav-link" data-scroll-target="#data-summary">Data Summary</a></li>
+  <li><a href="#download-data" id="toc-download-data" class="nav-link" data-scroll-target="#download-data">Download Data</a></li>
   <li><a href="#visualize-the-point-cloud" id="toc-visualize-the-point-cloud" class="nav-link" data-scroll-target="#visualize-the-point-cloud">Visualize the point cloud</a></li>
   </ul></li>
   <li><a href="#grass-project-setup" id="toc-grass-project-setup" class="nav-link" data-scroll-target="#grass-project-setup">GRASS Project Setup</a>
@@ -373,10 +374,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 </div>
 </div>
-<p>The dataset is available through OpenTopography</p>
+<p>The full dataset is available through OpenTopography</p>
 </section>
-<section id="data" class="level3">
-<h3 class="anchored" data-anchor-id="data">Data</h3>
+<section id="data-summary" class="level3">
+<h3 class="anchored" data-anchor-id="data-summary">Data Summary</h3>
 <ul>
 <li>Funding: National Science Foundation (NSF) Earth Sciences (EAR) Instrumentation and Facilities (IF) Program</li>
 <li>Partner: University of New Mexico</li>
@@ -395,6 +396,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p>Dorshow, W. (2019). 3D Landscape Reconstruction and Land Use Modeling, Chaco Canyon, NM 2016. National Center for Airborne Laser Mapping (NCALM). Distributed by OpenTopography. https://doi.org/10.5069/G9XG9P8D.. Accessed: 2024-08-19</p>
 </blockquote>
+</section>
+<section id="download-data" class="level3">
+<h3 class="anchored" data-anchor-id="download-data">Download Data</h3>
+<p>The data used in this tutorial is available through GitHub.</p>
+<p><a href="metadata/points2.laz">Lidar Data</a></p>
 </section>
 <section id="visualize-the-point-cloud" class="level3">
 <h3 class="anchored" data-anchor-id="visualize-the-point-cloud">Visualize the point cloud</h3>
@@ -1860,7 +1866,7 @@ Downloading assets: 100%|██████████████████�
 </div>
 </div>
 <p>Let’s create our final figure.</p>
-<div id="cell-93" class="cell" data-execution_count="903">
+<div id="cell-94" class="cell" data-execution_count="903">
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.gridspec <span class="im">as</span> gridspec</span>
 <span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> PIL <span class="im">import</span> Image</span>
