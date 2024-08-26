@@ -331,15 +331,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="ad4113dc" class="cell" data-execution_count="15">
+<div id="ad4113dc" class="cell" data-execution_count="132">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>sys.path.append(</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    subprocess.check_output([<span class="st">"grass"</span>, <span class="st">"--config"</span>, <span class="st">"python_path"</span>], text<span class="op">=</span><span class="va">True</span>).strip()</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="172002f3" class="cell" data-execution_count="16">
+<div id="172002f3" class="cell" data-execution_count="131">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import GRASS GIS python packages</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> grass.script <span class="im">as</span> gs</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> grass.jupyter <span class="im">as</span> gj</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>reload_ext autoreload</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>autoreload <span class="dv">2</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> grass.script <span class="im">as</span> gs</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> grass.jupyter <span class="im">as</span> gj</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="d5c2c6dc" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a temporary folder where to place our GRASS project</span></span>
@@ -396,7 +398,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="visualize-the-point-cloud" class="level3">
 <h3 class="anchored" data-anchor-id="visualize-the-point-cloud">Visualize the point cloud</h3>
-<div id="9a8fe1bf" class="cell" data-execution_count="826">
+<div id="9a8fe1bf" class="cell" data-execution_count="104">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> IFrame</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># URL of the website to be embedded</span></span>
@@ -406,7 +408,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>height <span class="op">=</span> <span class="dv">600</span></span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the IFrame in the notebook</span></span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>IFrame(url, width<span class="op">=</span>width, height<span class="op">=</span>height)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="826">
+<div class="cell-output cell-output-display" data-execution_count="104">
 
         <iframe width="800" height="600" src="https://ot-process2.sdsc.edu/potree/index.html?t=%5B233574.5,3994716,2188.5%5D&amp;p=%5B234704.19367662142,3993579.3112938125,2825.660091521463%5D&amp;r=%22https://ot-process2.sdsc.edu/appEntwineEPTService1724096588005642548939/pc1724096516919%22&amp;m=9&amp;era=%5B1858,2519%5D" frameborder="0" allowfullscreen=""></iframe>
         
@@ -1554,16 +1556,17 @@ cells:      327106</code></pre>
 </section>
 <section id="select-a-sample-point-for-analysis" class="level4">
 <h4 class="anchored" data-anchor-id="select-a-sample-point-for-analysis">Select a sample point for analysis</h4>
-<div id="3a9efb77" class="cell" data-execution_count="103">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> gj.InteractiveMap(width<span class="op">=</span><span class="st">"500"</span>, map_backend<span class="op">=</span><span class="st">"ipyleaflet"</span>)</span>
+<div id="3a9efb77" class="cell" data-execution_count="135">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> gj.InteractiveMap(width<span class="op">=</span><span class="dv">500</span>, map_backend<span class="op">=</span><span class="st">"ipyleaflet"</span>)</span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>m.query_mode <span class="op">=</span> <span class="st">"true"</span></span>
 <span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>m.add_raster(<span class="st">"hillshade"</span>, opacity<span class="op">=</span><span class="fl">0.85</span>)</span>
-<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>m.add_raster(<span class="st">"depth.10"</span>, opacity<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>m.add_layer_control()</span>
-<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>m.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>m.add_raster(<span class="st">"depth.08"</span>, opacity<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>m.add_raster(<span class="st">"depth.10"</span>, opacity<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>m.add_layer_control()</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>m.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id":"b9454dcea0ee4ce29ca4772ba93dd45e","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+{"model_id":"3f3dfdeed46a4b8c834311e8cf5ad5e9","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
 </script>
 </div>
 </div>

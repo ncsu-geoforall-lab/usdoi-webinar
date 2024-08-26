@@ -7,6 +7,10 @@ $banner-bg: #088B36;
 $grass-color-light:  #EFF4E8;
 $grass-color-black: #0a0a0a;
 
+// Revealjs theme colors
+$link-color: $primary;
+$presentation-heading-color: $primary;
+
 .quarto-title-banner {
   background-color: $grass-color-light !important;
   color: $grass-color-black !important;
@@ -14,3 +18,4 @@ $grass-color-black: #0a0a0a;
     color: $grass-color-black !important;
   }
 }
+

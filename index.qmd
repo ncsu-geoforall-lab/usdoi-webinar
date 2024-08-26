@@ -1,7 +1,9 @@
 ---
 title: "NCSU - GeoForAll Lab"
 listing:
-    contents: notebooks
+    contents: 
+        - notebooks
+        - presentations
     sort: "date desc"
     type: default
     categories: true

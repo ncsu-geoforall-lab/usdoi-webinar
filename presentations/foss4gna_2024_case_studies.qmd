@@ -1,0 +1,24 @@
+---
+format:
+    revealjs:
+        theme: [simple, ../theme.scss]
+author: Corey T. White
+title: GRASS GIS as Geocomputational Engine
+subtitle: FOSS4G NA 2024, St. Louis Missouri
+description: This talk will cover how users currently use GRASS GIS as their geocomputational engine. We will cover how GRASS GIS can be utilized locally, on the cloud, and in high-performance computing (HPC) clusters. We will highlight specific use cases to demonstrate what technologies and problems GRASS GIS users are solving worldwide.
+date: September 10, 2024
+categories: [geoprocessing, foss4gna, presentation, use Case and applications]
+draft: true
+---
+
+## GRASS as a Geoprocessing Engine
+
+- GRASS is a geoprocessing engine
+- Not your papi's GIS
+
+## GRASS in the Wild
+
+- Desktop
+- HPC
+- Cloud
+
